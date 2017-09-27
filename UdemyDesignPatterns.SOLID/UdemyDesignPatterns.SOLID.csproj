@@ -40,6 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversionPrinciple\Person.cs" />
+    <Compile Include="DependencyInversionPrinciple\Relationships.cs" />
+    <Compile Include="DependencyInversionPrinciple\Usage.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\Document.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IMachine.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IMultifunction.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IScanner.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IFaxer.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\IPrinter.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\MultifunctionPrinterGood.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\MultifunctionPrinterBad.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\OldFashionPrinterBad.cs" />
+    <Compile Include="InterfaceSegregationPrinciple\PhotoCopier.cs" />
     <Compile Include="LiskovSubstitution\LiskovUsage.cs" />
     <Compile Include="LiskovSubstitution\RectangleGood.cs" />
     <Compile Include="LiskovSubstitution\RectangleBad.cs" />
