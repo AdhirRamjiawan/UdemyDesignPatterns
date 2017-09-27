@@ -8,10 +8,13 @@ namespace UdemyDesignPatterns.SOLID.DependencyInversionPrinciple
 {
     public class Usage
     {
-        public Usage(Relationships relationships)
+        public Usage(IRelationships irelationships, Relationships relationships)
         {
             var _relationships = relationships.Relations.ToList();
             // bad as you're accessing a low level member (datasource) of the Relationships class
+
+            var _irelationships = irelationships.FindAllChildrenOf("john");
+            // good as you're accessing the high level module (interface)
         }
 
         public void Run()
