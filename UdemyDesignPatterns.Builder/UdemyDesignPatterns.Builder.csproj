@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B677A619-6E51-497D-8AC5-2BCBBFAB52D6}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UdemyDesignPatterns</RootNamespace>
-    <AssemblyName>UdemyDesignPatterns</AssemblyName>
+    <RootNamespace>UdemyDesignPatterns.Builder</RootNamespace>
+    <AssemblyName>UdemyDesignPatterns.Builder</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Exercises\CodeBuilder\Code.cs" />
+    <Compile Include="Exercises\CodeBuilder\CodeBuilder.cs" />
+    <Compile Include="Exercises\CodeBuilder\CodeClass.cs" />
+    <Compile Include="Exercises\CodeBuilder\CodeClassMember.cs" />
+    <Compile Include="Exercises\CodeBuilder\Usage.cs" />
+    <Compile Include="Faceted\Person.cs" />
+    <Compile Include="Faceted\PersonAddressBuilder.cs" />
+    <Compile Include="Faceted\PersonBuilder.cs" />
+    <Compile Include="Faceted\PersonJobBuilder.cs" />
+    <Compile Include="Faceted\Usage.cs" />
+    <Compile Include="Fluent\HtmlBuilder.cs" />
+    <Compile Include="Fluent\HtmlElement.cs" />
+    <Compile Include="Fluent\Usage.cs" />
+    <Compile Include="Plain\HtmlBuilder.cs" />
+    <Compile Include="Plain\HtmlElement.cs" />
+    <Compile Include="Plain\Usage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UdemyDesignPatterns.Builder\UdemyDesignPatterns.Builder.csproj">
-      <Project>{d5985dc1-d305-417c-be2d-aebd7b1ecf00}</Project>
-      <Name>UdemyDesignPatterns.Builder</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UdemyDesignPatterns.SOLID\UdemyDesignPatterns.SOLID.csproj">
-      <Project>{f19d0121-792c-4937-8ab5-cd116de981a9}</Project>
-      <Name>UdemyDesignPatterns.SOLID</Name>
-    </ProjectReference>
+    <Content Include="Exercises\CodeBuilder\Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

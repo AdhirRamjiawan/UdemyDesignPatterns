@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyDesignPatterns", "Udem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyDesignPatterns.SOLID", "UdemyDesignPatterns.SOLID\UdemyDesignPatterns.SOLID.csproj", "{F19D0121-792C-4937-8AB5-CD116DE981A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyDesignPatterns.Builder", "UdemyDesignPatterns.Builder\UdemyDesignPatterns.Builder.csproj", "{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F19D0121-792C-4937-8AB5-CD116DE981A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F19D0121-792C-4937-8AB5-CD116DE981A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F19D0121-792C-4937-8AB5-CD116DE981A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5985DC1-D305-417C-BE2D-AEBD7B1ECF00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,10 +11,9 @@ namespace UdemyDesignPatterns
     {
         static void Main(string[] args)
         {
-            JournalBad demoJ = new JournalBad();
+            UdemyDesignPatterns.Builder.Exercises.CodeBuilder.Usage.Run();
 
-            demoJ.AddEntry("new course, yay!");
-            demoJ.AddEntry("gonna be cool!");
+            Console.ReadLine();
         }
     }
 }
