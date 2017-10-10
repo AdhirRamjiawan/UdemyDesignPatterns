@@ -47,6 +47,9 @@
     <Compile Include="AbstractFactory\IHotDrinkFactory.cs" />
     <Compile Include="AbstractFactory\Tea.cs" />
     <Compile Include="AbstractFactory\TeaFactory.cs" />
+    <Compile Include="AbstractFactory\Usage.cs" />
+    <Compile Include="Exercises\PersonFactory\Person.cs" />
+    <Compile Include="Exercises\PersonFactory\PersonFactory.cs" />
     <Compile Include="FactoryMethod\GoodPoint.cs" />
     <Compile Include="FactoryMethod\BadPoint.cs" />
     <Compile Include="InnerFactory\GoodPoint.cs" />
